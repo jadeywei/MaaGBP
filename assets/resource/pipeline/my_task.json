@@ -1,20 +1,20 @@
 {
-    "$__mpe_config_test1": {
+    "$__mpe_config_MaaGBP": {
         "$__mpe_code": {
             "filePath": "C:\\repositories\\MaaGBP\\assets\\resource\\pipeline\\my_task.json",
-            "filename": "test1",
+            "filename": "MaaGBP",
             "isModifiedExternally": false,
-            "lastSyncTime": 1773145603985,
+            "lastSyncTime": 1773222637173,
             "prefix": "",
             "savedViewport": {
-                "x": -175,
-                "y": 129,
-                "zoom": 1
+                "x": 477,
+                "y": 161,
+                "zoom": 0.2
             },
             "version": "v1.2.3"
         }
     },
-    "$__mpe_group_打歌完毕回首页_test1": {
+    "$__mpe_group_打歌完毕回首页_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
                 "点上方跳过",
@@ -30,16 +30,16 @@
             "width": 695
         }
     },
-    "$__mpe_group_每周星石_test1": {
+    "$__mpe_group_每周星石_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
+                "找超值组合右上红点",
                 "菜单有红点",
                 "星石商店有红点",
                 "找到星石商店",
                 "商店有红点",
                 "超值组合有红点",
                 "找到超值组合",
-                "找超值组合右上红点",
                 "点免费星石按钮",
                 "免费星石_领取按钮",
                 "免费星石_已领取按钮",
@@ -48,13 +48,13 @@
             "color": "blue",
             "height": 487,
             "position": {
-                "x": -564,
-                "y": 2811
+                "x": -309,
+                "y": 2650
             },
             "width": 2042
         }
     },
-    "$__mpe_group_每日3次免费抽卡_test1": {
+    "$__mpe_group_每日3次免费抽卡_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
                 "判断是否完成每日抽卡",
@@ -70,32 +70,32 @@
             "color": "blue",
             "height": 630,
             "position": {
-                "x": -545,
-                "y": 2050
+                "x": -313,
+                "y": 1948
             },
             "width": 1964
         }
     },
-    "$__mpe_group_结束后点击确定和下一步_test1": {
+    "$__mpe_group_结束后点击确定和下一步_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
+                "找俩按钮_先点下一步",
                 "打歌完成点右下确定",
                 "打完歌找下一步",
                 "打完歌找中间的确定",
                 "等待打歌完成",
-                "找俩按钮_先点下一步",
                 "然后点确定"
             ],
             "color": "blue",
             "height": 724,
             "position": {
-                "x": 2285,
-                "y": -180
+                "x": 2309,
+                "y": -195
             },
             "width": 804
         }
     },
-    "$__mpe_group_选曲完毕-开始打歌_test1": {
+    "$__mpe_group_选曲完毕-开始打歌_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
                 "开始演出",
@@ -116,7 +116,7 @@
             "width": 1614
         }
     },
-    "$__mpe_group_领任务奖励_test1": {
+    "$__mpe_group_领任务奖励_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
                 "点击任务按钮（原",
@@ -129,13 +129,13 @@
             "color": "blue",
             "height": 630,
             "position": {
-                "x": -506,
-                "y": 1333
+                "x": -306,
+                "y": 1272
             },
             "width": 1047
         }
     },
-    "$__mpe_group_领礼包_test1": {
+    "$__mpe_group_领礼包_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
                 "点击礼包按钮（原",
@@ -148,13 +148,13 @@
             "color": "blue",
             "height": 644,
             "position": {
-                "x": -491,
-                "y": 571
+                "x": -307,
+                "y": 572
             },
             "width": 931
         }
     },
-    "$__mpe_group_首页-选曲_test1": {
+    "$__mpe_group_首页-选曲_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
                 "识别自由演出",
@@ -211,32 +211,45 @@
         "action": {
             "param": {
                 "begin": [
-                    82,
-                    595,
-                    48,
-                    36
+                    118,
+                    609,
+                    24,
+                    16
                 ],
                 "duration": [
-                    1000
+                    200
                 ],
                 "end": [
                     [
-                        80,
-                        208,
-                        32,
-                        22
+                        114,
+                        119,
+                        24,
+                        10
                     ]
+                ],
+                "end_hold": [
+                    30
                 ]
             },
             "type": "Swipe"
         },
         "next": [
-            "点击抽卡按钮"
+            "点击抽卡按钮",
+            "退出抽卡界面"
         ],
         "post_wait_freezes": 300,
         "pre_wait_freezes": 300,
         "repeat": 3,
-        "repeat_delay": 800
+        "repeat_delay": 220
+    },
+    "任务执行完毕": {
+        "$__mpe_code": {
+            "handleDirection": "top-bottom",
+            "position": {
+                "x": -765,
+                "y": 786
+            }
+        }
     },
     "免费星石_已领取按钮": {
         "$__mpe_code": {
@@ -363,8 +376,8 @@
     "关闭游戏": {
         "$__mpe_code": {
             "position": {
-                "x": -1144,
-                "y": 411
+                "x": -1244,
+                "y": 566
             }
         },
         "action": {
@@ -406,6 +419,32 @@
             "type": "OCR"
         }
     },
+    "判断体力是否大等于10": {
+        "$__mpe_code": {
+            "position": {
+                "x": -320,
+                "y": 306
+            }
+        },
+        "next": [
+            "点击演出"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "[1-9][0-9]"
+                ],
+                "roi": [
+                    979,
+                    31,
+                    23,
+                    19
+                ]
+            },
+            "type": "OCR"
+        },
+        "repeat": 2
+    },
     "判断是否完成每日抽卡": {
         "$__mpe_code": {
             "position": {
@@ -427,7 +466,7 @@
         "next": [
             "下拉3次"
         ],
-        "post_wait_freezes": 5000,
+        "post_wait_freezes": 300,
         "pre_wait_freezes": 300,
         "recognition": {
             "param": {
@@ -480,8 +519,8 @@
     "开始演出": {
         "$__mpe_code": {
             "position": {
-                "x": 1261,
-                "y": 565
+                "x": 1396,
+                "y": 572
             }
         },
         "action": {
@@ -587,8 +626,8 @@
     "打开游戏": {
         "$__mpe_code": {
             "position": {
-                "x": -1120,
-                "y": -42
+                "x": -1241,
+                "y": 351
             }
         },
         "action": {
@@ -634,8 +673,8 @@
     "打歌完成点右下确定": {
         "$__mpe_code": {
             "position": {
-                "x": 305,
-                "y": 484
+                "x": 356,
+                "y": 455
             }
         },
         "action": {
@@ -645,7 +684,7 @@
         "next": [
             "点击菜单"
         ],
-        "post_wait_freezes": 3000,
+        "post_wait_freezes": 2000,
         "pre_wait_freezes": 300,
         "recognition": {
             "param": {
@@ -742,15 +781,15 @@
     "找超值组合右上红点": {
         "$__mpe_code": {
             "position": {
-                "x": 893,
-                "y": 279
+                "x": 890,
+                "y": 282
             }
         },
         "recognition": {
             "param": {
                 "lower": [
                     [
-                        255,
+                        250,
                         50,
                         100
                     ]
@@ -837,16 +876,16 @@
     "每日首登点击下一步": {
         "$__mpe_code": {
             "position": {
-                "x": -577,
-                "y": -179
+                "x": -315,
+                "y": 38
             }
         },
         "action": {
             "param": {},
             "type": "Click"
         },
-        "post_wait_freezes": 300,
-        "pre_wait_freezes": 300,
+        "post_wait_freezes": 500,
+        "pre_wait_freezes": 500,
         "recognition": {
             "param": {
                 "roi": [
@@ -860,9 +899,7 @@
                 ]
             },
             "type": "TemplateMatch"
-        },
-        "repeat": 10,
-        "repeat_delay": 2000
+        }
     },
     "没有可领取的礼物": {
         "$__mpe_code": {
@@ -1064,8 +1101,8 @@
     "点击TAP2START": {
         "$__mpe_code": {
             "position": {
-                "x": -852,
-                "y": -46
+                "x": -974,
+                "y": 304
             }
         },
         "action": {
@@ -1073,14 +1110,9 @@
             "type": "Click"
         },
         "next": [
-            "[JumpBack]每日首登点击下一步",
-            "[JumpBack]识别体力十位数为1、2",
-            "点击礼包按钮",
-            "点击任务按钮",
-            "判断是否完成每日抽卡",
-            "菜单有红点"
+            "等待登录中"
         ],
-        "post_wait_freezes": 15000,
+        "post_wait_freezes": 300,
         "pre_wait_freezes": 300,
         "recognition": {
             "param": {
@@ -1223,8 +1255,8 @@
     "点击演出": {
         "$__mpe_code": {
             "position": {
-                "x": -210,
-                "y": 134
+                "x": -98,
+                "y": 296
             }
         },
         "action": {
@@ -1487,8 +1519,8 @@
     "点领取": {
         "$__mpe_code": {
             "position": {
-                "x": 583,
-                "y": 43
+                "x": 577,
+                "y": 56
             }
         },
         "action": {
@@ -1575,6 +1607,24 @@
         ],
         "pre_delay": 120000
     },
+    "等待登录中": {
+        "$__mpe_code": {
+            "position": {
+                "x": -715,
+                "y": 358
+            }
+        },
+        "next": [
+            "[JumpBack]每日首登点击下一步",
+            "[JumpBack]判断体力是否大等于10",
+            "[JumpBack]点击礼包按钮",
+            "[JumpBack]点击任务按钮",
+            "[JumpBack]判断是否完成每日抽卡",
+            "菜单有红点",
+            "任务执行完毕"
+        ],
+        "post_delay": 15000
+    },
     "自动已开且识别不到最大消费": {
         "$__mpe_code": {
             "position": {
@@ -1627,33 +1677,6 @@
             },
             "type": "TemplateMatch"
         }
-    },
-    "识别体力十位数为1、2": {
-        "$__mpe_code": {
-            "position": {
-                "x": -506,
-                "y": 142
-            }
-        },
-        "next": [
-            "点击演出"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "1",
-                    "2"
-                ],
-                "roi": [
-                    970,
-                    29,
-                    20,
-                    22
-                ]
-            },
-            "type": "OCR"
-        },
-        "repeat": 2
     },
     "识别十倍体力选中": {
         "$__mpe_code": {
@@ -1817,8 +1840,8 @@
     "退出抽卡界面": {
         "$__mpe_code": {
             "position": {
-                "x": 1752,
-                "y": 257
+                "x": 1754,
+                "y": 441
             }
         },
         "action": {
@@ -1846,6 +1869,9 @@
             "param": {},
             "type": "Click"
         },
+        "next": [
+            "开始演出"
+        ],
         "post_wait_freezes": 300,
         "pre_wait_freezes": 300,
         "recognition": {
