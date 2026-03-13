@@ -4,12 +4,12 @@
             "filePath": "C:\\repositories\\MaaGBP\\assets\\resource\\pipeline\\my_task.json",
             "filename": "MaaGBP",
             "isModifiedExternally": false,
-            "lastSyncTime": 1773304507357,
+            "lastSyncTime": 1773412016820,
             "prefix": "",
             "savedViewport": {
-                "x": 255,
-                "y": 162,
-                "zoom": 0.2
+                "x": 1343,
+                "y": -274,
+                "zoom": 1.27
             },
             "version": "v1.2.3"
         }
@@ -473,8 +473,8 @@
     "判断是否完成每日抽卡（旧": {
         "$__mpe_code": {
             "position": {
-                "x": 43,
-                "y": 329
+                "x": 42,
+                "y": 392
             }
         },
         "action": {
@@ -873,7 +873,7 @@
                 "y": 673
             }
         },
-        "inverse": true,
+        "inverse": false,
         "next": [
             "关闭菜单界面"
         ],
@@ -1714,7 +1714,44 @@
             "[JumpBack]点击任务按钮",
             "进入每日抽卡"
         ],
-        "pre_delay": 15000
+        "pre_delay": 15000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "登录游戏获得奖励"
+                ],
+                "roi": [
+                    366,
+                    18,
+                    522,
+                    82
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "等待登录中备份_调试时节点改为直接点击": {
+        "$__mpe_code": {
+            "position": {
+                "x": -711,
+                "y": 582
+            }
+        },
+        "pre_delay": 15000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "登录游戏获得奖励"
+                ],
+                "roi": [
+                    366,
+                    18,
+                    522,
+                    82
+                ]
+            },
+            "type": "OCR"
+        }
     },
     "自动已开且识别不到最大消费": {
         "$__mpe_code": {
@@ -2087,7 +2124,21 @@
             "下拉3次"
         ],
         "post_wait_freezes": 300,
-        "pre_wait_freezes": 300
+        "pre_wait_freezes": 300,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "招募"
+                ],
+                "roi": [
+                    670,
+                    671,
+                    62,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
     },
     "退出抽卡界面": {
         "$__mpe_code": {
