@@ -4,12 +4,12 @@
             "filePath": "C:\\repositories\\MaaGBP\\assets\\resource\\pipeline\\my_task.json",
             "filename": "MaaGBP",
             "isModifiedExternally": false,
-            "lastSyncTime": 1773412016820,
+            "lastSyncTime": 1773468770855,
             "prefix": "",
             "savedViewport": {
-                "x": 1343,
-                "y": -274,
-                "zoom": 1.27
+                "x": 627,
+                "y": 33,
+                "zoom": 0.5
             },
             "version": "v1.2.3"
         }
@@ -24,8 +24,8 @@
             "color": "blue",
             "height": 357,
             "position": {
-                "x": 3121,
-                "y": 177
+                "x": 4291,
+                "y": 417
             },
             "width": 695
         }
@@ -53,8 +53,8 @@
             "color": "blue",
             "height": 1117,
             "position": {
-                "x": 1940,
-                "y": 1973
+                "x": 3035,
+                "y": 2188
             },
             "width": 2533
         }
@@ -79,15 +79,33 @@
             "color": "blue",
             "height": 759,
             "position": {
-                "x": -318,
-                "y": 1957
+                "x": 777,
+                "y": 2172
             },
             "width": 2220
+        }
+    },
+    "$__mpe_group_每日首登流程_MaaGBP": {
+        "$__mpe_code": {
+            "childrenLabels": [
+                "每日首登点击下一步",
+                "识别到主页",
+                "等待登录中"
+            ],
+            "color": "blue",
+            "height": 496,
+            "position": {
+                "x": 131,
+                "y": 320
+            },
+            "width": 556
         }
     },
     "$__mpe_group_结束后点击确定和下一步_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
+                "右下识别确定",
+                "右下按钮亮了",
                 "打完歌找下一步",
                 "打完歌找中间的确定",
                 "打歌完成点右下确定",
@@ -97,12 +115,12 @@
                 "获得报酬点中间ok"
             ],
             "color": "blue",
-            "height": 998,
+            "height": 1159,
             "position": {
-                "x": 2308,
-                "y": -385
+                "x": 3397,
+                "y": -249
             },
-            "width": 804
+            "width": 828
         }
     },
     "$__mpe_group_选曲完毕-开始打歌_MaaGBP": {
@@ -120,8 +138,8 @@
             "color": "blue",
             "height": 806,
             "position": {
-                "x": 619,
-                "y": -262
+                "x": 1714,
+                "y": -47
             },
             "width": 1614
         }
@@ -139,8 +157,8 @@
             "color": "blue",
             "height": 630,
             "position": {
-                "x": -306,
-                "y": 1272
+                "x": 789,
+                "y": 1487
             },
             "width": 1047
         }
@@ -158,8 +176,8 @@
             "color": "blue",
             "height": 644,
             "position": {
-                "x": -307,
-                "y": 572
+                "x": 788,
+                "y": 787
             },
             "width": 931
         }
@@ -174,8 +192,8 @@
             "color": "blue",
             "height": 492,
             "position": {
-                "x": 121,
-                "y": 32
+                "x": 1216,
+                "y": 247
             },
             "width": 450
         }
@@ -380,8 +398,8 @@
     "关闭游戏": {
         "$__mpe_code": {
             "position": {
-                "x": -1244,
-                "y": 566
+                "x": -404,
+                "y": 585
             }
         },
         "action": {
@@ -447,8 +465,8 @@
     "判断体力是否大等于10": {
         "$__mpe_code": {
             "position": {
-                "x": -320,
-                "y": 306
+                "x": 775,
+                "y": 521
             }
         },
         "next": [
@@ -500,6 +518,61 @@
                     559,
                     127,
                     35
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "右下按钮亮了": {
+        "$__mpe_code": {
+            "position": {
+                "x": 238,
+                "y": 918
+            }
+        },
+        "recognition": {
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        55,
+                        110
+                    ]
+                ],
+                "roi": [
+                    989,
+                    633,
+                    36,
+                    28
+                ],
+                "upper": [
+                    [
+                        255,
+                        65,
+                        120
+                    ]
+                ]
+            },
+            "type": "ColorMatch"
+        }
+    },
+    "右下识别确定": {
+        "$__mpe_code": {
+            "position": {
+                "x": 453,
+                "y": 918
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    1013,
+                    627,
+                    115,
+                    45
                 ]
             },
             "type": "OCR"
@@ -681,8 +754,8 @@
     "打开游戏": {
         "$__mpe_code": {
             "position": {
-                "x": -1241,
-                "y": 351
+                "x": -401,
+                "y": 370
             }
         },
         "action": {
@@ -743,17 +816,12 @@
         "pre_wait_freezes": 300,
         "recognition": {
             "param": {
-                "expected": [
-                    "确定"
-                ],
-                "roi": [
-                    1013,
-                    627,
-                    115,
-                    45
+                "all_of": [
+                    "右下按钮亮了",
+                    "右下识别确定"
                 ]
             },
-            "type": "OCR"
+            "type": "And"
         }
     },
     "找俩按钮_先点下一步": {
@@ -999,8 +1067,8 @@
     "每日首登点击下一步": {
         "$__mpe_code": {
             "position": {
-                "x": -315,
-                "y": 38
+                "x": 321,
+                "y": 39
             }
         },
         "action": {
@@ -1224,8 +1292,8 @@
     "点击TAP2START": {
         "$__mpe_code": {
             "position": {
-                "x": -974,
-                "y": 304
+                "x": -134,
+                "y": 323
             }
         },
         "action": {
@@ -1347,8 +1415,8 @@
     "点击演出": {
         "$__mpe_code": {
             "position": {
-                "x": -98,
-                "y": 296
+                "x": 997,
+                "y": 511
             }
         },
         "action": {
@@ -1703,40 +1771,14 @@
     "等待登录中": {
         "$__mpe_code": {
             "position": {
-                "x": -715,
-                "y": 358
+                "x": 4,
+                "y": 42
             }
         },
         "next": [
             "[JumpBack]每日首登点击下一步",
-            "[JumpBack]判断体力是否大等于10",
-            "[JumpBack]点击礼包按钮",
-            "[JumpBack]点击任务按钮",
-            "进入每日抽卡"
+            "识别到主页"
         ],
-        "pre_delay": 15000,
-        "recognition": {
-            "param": {
-                "expected": [
-                    "登录游戏获得奖励"
-                ],
-                "roi": [
-                    366,
-                    18,
-                    522,
-                    82
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "等待登录中备份_调试时节点改为直接点击": {
-        "$__mpe_code": {
-            "position": {
-                "x": -711,
-                "y": 582
-            }
-        },
         "pre_delay": 15000,
         "recognition": {
             "param": {
@@ -1882,6 +1924,34 @@
                     655,
                     49,
                     36
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "识别到主页": {
+        "$__mpe_code": {
+            "position": {
+                "x": 326,
+                "y": 285
+            }
+        },
+        "next": [
+            "[JumpBack]判断体力是否大等于10",
+            "[JumpBack]点击礼包按钮",
+            "[JumpBack]点击任务按钮",
+            "进入每日抽卡"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "等级"
+                ],
+                "roi": [
+                    728,
+                    26,
+                    45,
+                    27
                 ]
             },
             "type": "OCR"
