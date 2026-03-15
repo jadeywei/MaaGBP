@@ -1,0 +1,2458 @@
+{
+    "$__mpe_config_MaaGBP": {
+        "$__mpe_code": {
+            "prefix": "",
+            "lastSyncTime": 1773560074567,
+            "isModifiedExternally": false,
+            "filePath": "C:\\repositories\\MaaGBP\\assets\\resource\\pipeline\\my_task.json",
+            "savedViewport": {
+                "x": 148,
+                "y": 325,
+                "zoom": 0.25
+            },
+            "filename": "MaaGBP",
+            "version": "v1.2.3"
+        }
+    },
+    "等待打歌完成": {
+        "pre_delay": 90000,
+        "timeout": -1,
+        "$__mpe_code": {
+            "position": {
+                "x": 20,
+                "y": 216
+            }
+        },
+        "next": [
+            "识别到打歌完成的得分字样"
+        ]
+    },
+    "点击expert难度": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        55,
+                        110
+                    ]
+                ],
+                "upper": [
+                    [
+                        255,
+                        65,
+                        120
+                    ]
+                ],
+                "roi": [
+                    986,
+                    633,
+                    41,
+                    24
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1035,
+                    527,
+                    32,
+                    27
+                ]
+            }
+        },
+        "pre_wait_freezes": 300,
+        "post_wait_freezes": 300,
+        "repeat": 3,
+        "$__mpe_code": {
+            "position": {
+                "x": 552,
+                "y": 160
+            }
+        },
+        "next": [
+            "点击随机选曲按钮"
+        ]
+    },
+    "点击随机选曲按钮": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    660,
+                    617,
+                    52,
+                    48
+                ]
+            }
+        },
+        "pre_wait_freezes": 300,
+        "post_wait_freezes": 300,
+        "repeat": 2,
+        "$__mpe_code": {
+            "position": {
+                "x": 789,
+                "y": 251
+            }
+        },
+        "next": [
+            "点击确定"
+        ]
+    },
+    "$__mpe_group_进入打歌清体力流程_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 771,
+                "y": 436
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "判断体力是否大等于10",
+                "点击演出"
+            ],
+            "width": 466,
+            "height": 300
+        }
+    },
+    "$__mpe_group_打歌完毕回首页_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5204,
+                "y": 487
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "点上方跳过",
+                "点击菜单",
+                "点屏幕中间跳过"
+            ],
+            "width": 695,
+            "height": 357
+        }
+    },
+    "$__mpe_group_每周星石_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3035,
+                "y": 2188
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "免费星石_已领取按钮",
+                "免费星石_领取按钮",
+                "关闭星石商店",
+                "商店有红点",
+                "找到星石商店",
+                "找到超值组合",
+                "找超值组合右上红点",
+                "星石商店无红点_所有任务结束",
+                "星石商店有红点",
+                "点免费星石按钮",
+                "菜单无红点_所有任务结束",
+                "菜单有红点",
+                "超值组合有红点",
+                "每周星石流程开始",
+                "关闭菜单界面",
+                "商店无红点"
+            ],
+            "width": 2533,
+            "height": 1117
+        }
+    },
+    "$__mpe_group_每日3次免费抽卡_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 777,
+                "y": 2172
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "3次抽完点下面确定",
+                "下拉3次",
+                "再次招募",
+                "判断是否完成每日抽卡（旧",
+                "每日免费抽卡还有次数",
+                "点skip4次_也可跳过4星卡",
+                "点中间确定",
+                "点招募",
+                "识别免费按钮",
+                "识别按钮为亮",
+                "识别非今日已完成",
+                "进入每日抽卡",
+                "退出抽卡界面"
+            ],
+            "width": 2220,
+            "height": 759
+        }
+    },
+    "$__mpe_group_结束后点击确定和下一步_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4073,
+                "y": -305
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "等待打歌完成",
+                "打完歌找下一步",
+                "打完歌找中间的确定",
+                "打歌完成点右下确定",
+                "找俩按钮_先点下一步",
+                "然后点确定",
+                "识别到打歌完成的得分字样",
+                "获得报酬点中间ok",
+                "右下识别确定",
+                "右下按钮亮了"
+            ],
+            "width": 1092,
+            "height": 1159
+        }
+    },
+    "$__mpe_group_选曲完毕-开始打歌_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2393,
+                "y": -47
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "开始演出",
+                "打开十倍体力页面",
+                "打开自动演出",
+                "最大消费还有x次",
+                "点击确定",
+                "自动已开且识别不到最大消费",
+                "识别十倍体力选中",
+                "选中十倍体力后点ok"
+            ],
+            "width": 1614,
+            "height": 806
+        }
+    },
+    "$__mpe_group_领任务奖励_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 789,
+                "y": 1487
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "关闭任务页面",
+                "点ok",
+                "点击任务按钮",
+                "点击任务按钮（原",
+                "点红点",
+                "点领取"
+            ],
+            "width": 1047,
+            "height": 630
+        }
+    },
+    "$__mpe_group_领礼包_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 788,
+                "y": 787
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "没有可领取的礼物",
+                "点击礼包按钮",
+                "点击礼包按钮（原",
+                "确定获得新服装",
+                "领取",
+                "领完点确定"
+            ],
+            "width": 931,
+            "height": 644
+        }
+    },
+    "$__mpe_group_首页-选曲_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1311,
+                "y": 247
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "点击expert难度",
+                "点击随机选曲按钮",
+                "识别自由演出",
+                "识别黄P",
+                "识别黄P和自由演出"
+            ],
+            "width": 1022,
+            "height": 492
+        }
+    },
+    "$__mpe_group_每日首登流程_MaaGBP": {
+        "$__mpe_code": {
+            "position": {
+                "x": 131,
+                "y": 320
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "每日首登点击下一步",
+                "识别到主页",
+                "等待登录中"
+            ],
+            "width": 556,
+            "height": 496
+        }
+    },
+    "3次抽完点下面确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    1007,
+                    620,
+                    140,
+                    49
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1759,
+                "y": 218
+            }
+        },
+        "next": [
+            "退出抽卡界面"
+        ]
+    },
+    "下拉3次": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    118,
+                    609,
+                    24,
+                    16
+                ],
+                "duration": [
+                    200
+                ],
+                "end": [
+                    [
+                        114,
+                        119,
+                        24,
+                        10
+                    ]
+                ],
+                "end_hold": [
+                    30
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "repeat": 3,
+        "repeat_delay": 220,
+        "$__mpe_code": {
+            "position": {
+                "x": 287,
+                "y": 48
+            }
+        },
+        "next": [
+            "每日免费抽卡还有次数",
+            "退出抽卡界面"
+        ]
+    },
+    "免费星石_已领取按钮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "已领取"
+                ],
+                "roi": [
+                    395,
+                    234,
+                    98,
+                    29
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    603,
+                    430,
+                    75,
+                    40
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1840,
+                "y": 36
+            }
+        },
+        "next": [
+            "关闭星石商店"
+        ]
+    },
+    "免费星石_领取按钮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "领取"
+                ],
+                "roi": [
+                    721,
+                    562,
+                    117,
+                    43
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1603,
+                "y": 46
+            }
+        },
+        "next": [
+            "免费星石_已领取按钮"
+        ]
+    },
+    "关闭任务页面": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {
+                "roi": [
+                    518,
+                    365,
+                    232,
+                    79
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    30,
+                    30,
+                    45,
+                    45
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 334,
+                "y": 390
+            }
+        }
+    },
+    "关闭星石商店": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    30,
+                    30,
+                    45,
+                    45
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 2075,
+                "y": 56
+            }
+        },
+        "next": [
+            "关闭菜单界面"
+        ]
+    },
+    "关闭游戏": {
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.bilibili.star.bili"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -404,
+                "y": 585
+            }
+        }
+    },
+    "再次招募": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "免费"
+                ],
+                "roi": [
+                    750,
+                    612,
+                    140,
+                    70
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 945,
+                "y": 369
+            },
+            "handleDirection": "bottom-top"
+        },
+        "next": [
+            "点招募"
+        ]
+    },
+    "判断体力是否大等于10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "[1-9][0-9]"
+                ],
+                "roi": [
+                    979,
+                    31,
+                    23,
+                    19
+                ]
+            }
+        },
+        "repeat": 2,
+        "$__mpe_code": {
+            "position": {
+                "x": 9,
+                "y": 78
+            }
+        },
+        "next": [
+            "点击演出"
+        ]
+    },
+    "判断是否完成每日抽卡（旧": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "次免费"
+                ],
+                "roi": [
+                    649,
+                    559,
+                    127,
+                    35
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    670,
+                    635,
+                    65,
+                    60
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 42,
+                "y": 392
+            }
+        }
+    },
+    "商店有红点": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        50,
+                        100
+                    ]
+                ],
+                "roi": [
+                    609,
+                    166,
+                    28,
+                    27
+                ],
+                "upper": [
+                    [
+                        255,
+                        80,
+                        120
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 712,
+                "y": 276
+            }
+        }
+    },
+    "开始演出": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "演出开始"
+                ],
+                "roi": [
+                    1050,
+                    590,
+                    167,
+                    87
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1396,
+                "y": 572
+            }
+        },
+        "next": [
+            "等待打歌完成"
+        ]
+    },
+    "打完歌找下一步": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "下一步"
+                ],
+                "roi": [
+                    970,
+                    625,
+                    189,
+                    51
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 503,
+                "y": 267
+            }
+        }
+    },
+    "打完歌找中间的确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    586,
+                    518,
+                    110,
+                    55
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 719,
+                "y": 266
+            }
+        }
+    },
+    "打开十倍体力页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "设定"
+                ],
+                "roi": [
+                    806,
+                    627,
+                    99,
+                    45
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 655,
+                "y": 260
+            }
+        },
+        "next": [
+            "识别十倍体力选中",
+            "选中十倍体力后点ok"
+        ]
+    },
+    "打开游戏": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.bilibili.star.bili"
+            }
+        },
+        "post_wait_freezes": 15000,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": -401,
+                "y": 370
+            }
+        },
+        "next": [
+            "点击TAP2START"
+        ]
+    },
+    "打开自动演出": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "自动演出 关"
+                ],
+                "roi": [
+                    805,
+                    553,
+                    180,
+                    52
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 329,
+                "y": 43
+            }
+        }
+    },
+    "打歌完成点右下确定": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "右下按钮亮了",
+                    "右下识别确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 2000,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 590,
+                "y": 717
+            }
+        },
+        "next": [
+            "点击菜单"
+        ]
+    },
+    "找俩按钮_先点下一步": {
+        "recognition": {
+            "type": "Or",
+            "param": {
+                "any_of": [
+                    "打完歌找下一步",
+                    "打完歌找中间的确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1010,
+                    640,
+                    100,
+                    30
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 595,
+                "y": 37
+            }
+        },
+        "next": [
+            "然后点确定"
+        ]
+    },
+    "找到星石商店": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "星石商店"
+                ],
+                "roi": [
+                    488,
+                    192,
+                    109,
+                    40
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 497,
+                "y": 282
+            }
+        }
+    },
+    "找到超值组合": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "超值组合"
+                ],
+                "roi": [
+                    97,
+                    281,
+                    122,
+                    62
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 934,
+                "y": 279
+            }
+        }
+    },
+    "找超值组合右上红点": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        50,
+                        100
+                    ]
+                ],
+                "roi": [
+                    247,
+                    271,
+                    34,
+                    31
+                ],
+                "upper": [
+                    [
+                        255,
+                        80,
+                        120
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1152,
+                "y": 282
+            }
+        }
+    },
+    "星石商店无红点_所有任务结束": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "找到星石商店",
+                    "商店无红点"
+                ]
+            }
+        },
+        "inverse": false,
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 599,
+                "y": 673
+            }
+        },
+        "next": [
+            "关闭菜单界面"
+        ]
+    },
+    "星石商店有红点": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "找到星石商店",
+                    "商店有红点"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    498,
+                    195,
+                    92,
+                    30
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 575,
+                "y": 46
+            }
+        },
+        "next": [
+            "超值组合有红点"
+        ]
+    },
+    "最大消费还有x次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "最大消费还"
+                ],
+                "roi": [
+                    798,
+                    614,
+                    95,
+                    27
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "rate_limit": 1500,
+        "repeat": 1,
+        "$__mpe_code": {
+            "position": {
+                "x": 330,
+                "y": 282
+            }
+        },
+        "next": [
+            "打开十倍体力页面"
+        ]
+    },
+    "每日免费抽卡还有次数": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "识别免费按钮",
+                    "识别按钮为亮"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1154,
+                    636,
+                    79,
+                    43
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 621,
+                "y": 70
+            }
+        },
+        "next": [
+            "点招募"
+        ]
+    },
+    "每日首登点击下一步": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    929,
+                    605,
+                    260,
+                    89
+                ],
+                "template": [
+                    "template_1773080763771.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 500,
+        "pre_wait_freezes": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": 321,
+                "y": 39
+            }
+        }
+    },
+    "没有可领取的礼物": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "没有可领取的礼物"
+                ],
+                "roi": [
+                    518,
+                    365,
+                    232,
+                    79
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    30,
+                    30,
+                    45,
+                    45
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 715,
+                "y": 48
+            }
+        }
+    },
+    "点ok": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "OK"
+                ],
+                "roi": [
+                    591,
+                    568,
+                    100,
+                    73
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 824,
+                "y": 42
+            }
+        }
+    },
+    "点skip4次_也可跳过4星卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "KIP"
+                ],
+                "roi": [
+                    1188,
+                    49,
+                    43,
+                    43
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "repeat": 4,
+        "repeat_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1272,
+                "y": 48
+            }
+        },
+        "next": [
+            "点中间确定"
+        ]
+    },
+    "点上方跳过": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "跳过"
+                ],
+                "roi": [
+                    550,
+                    60,
+                    60,
+                    30
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 251,
+                "y": 124
+            }
+        },
+        "next": [
+            "点屏幕中间跳过"
+        ]
+    },
+    "点中间确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    599,
+                    578,
+                    84,
+                    52
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1507,
+                "y": 68
+            }
+        },
+        "next": [
+            "再次招募",
+            "3次抽完点下面确定"
+        ]
+    },
+    "点免费星石按钮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "免费"
+                ],
+                "roi": [
+                    514,
+                    435,
+                    56,
+                    33
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    514,
+                    436,
+                    52,
+                    32
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1369,
+                "y": 35
+            }
+        },
+        "next": [
+            "免费星石_领取按钮"
+        ]
+    },
+    "点击TAP2START": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        118,
+                        61,
+                        101
+                    ]
+                ],
+                "roi": [
+                    542,
+                    622,
+                    189,
+                    32
+                ],
+                "upper": [
+                    [
+                        249,
+                        88,
+                        130
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "repeat": 5,
+        "repeat_delay": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": -134,
+                "y": 323
+            }
+        },
+        "next": [
+            "等待登录中"
+        ]
+    },
+    "点击任务按钮": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        50,
+                        100
+                    ]
+                ],
+                "roi": [
+                    1257,
+                    311,
+                    17,
+                    19
+                ],
+                "upper": [
+                    [
+                        255,
+                        80,
+                        120
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1218,
+                    335,
+                    33,
+                    38
+                ]
+            }
+        },
+        "post_wait_freezes": 500,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 2,
+                "y": 53
+            }
+        },
+        "next": [
+            "[JumpBack]点红点",
+            "关闭任务页面"
+        ]
+    },
+    "点击任务按钮（原": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1195,
+                    295,
+                    85,
+                    100
+                ],
+                "template": [
+                    "template_1773127436017.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 500,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 3,
+                "y": 379
+            }
+        }
+    },
+    "点击演出": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "演出"
+                ],
+                "roi": [
+                    1132,
+                    655,
+                    84,
+                    44
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": 68
+            }
+        },
+        "next": [
+            "识别自由演出"
+        ]
+    },
+    "点击确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    962,
+                    620,
+                    220,
+                    54
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 7,
+                "y": 414
+            }
+        },
+        "next": [
+            "[JumpBack]打开自动演出",
+            "最大消费还有x次",
+            "自动已开且识别不到最大消费"
+        ]
+    },
+    "点击礼包按钮": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        50,
+                        100
+                    ]
+                ],
+                "roi": [
+                    1253,
+                    214,
+                    23,
+                    23
+                ],
+                "upper": [
+                    [
+                        255,
+                        80,
+                        120
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1220,
+                    240,
+                    25,
+                    35
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -1,
+                "y": 43
+            }
+        },
+        "next": [
+            "没有可领取的礼物",
+            "领取"
+        ]
+    },
+    "点击礼包按钮（原": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1200,
+                    200,
+                    80,
+                    90
+                ],
+                "template": [
+                    "template_1773125586405.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 1000,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": -6,
+                "y": 378
+            }
+        }
+    },
+    "点击菜单": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "菜单"
+                ],
+                "roi": [
+                    1166,
+                    38,
+                    67,
+                    45
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 18,
+                "y": 124
+            }
+        },
+        "next": [
+            "点上方跳过"
+        ]
+    },
+    "点屏幕中间跳过": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "跳过"
+                ],
+                "roi": [
+                    725,
+                    425,
+                    85,
+                    45
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 484,
+                "y": 126
+            }
+        }
+    },
+    "点招募": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "招募"
+                ],
+                "roi": [
+                    715,
+                    449,
+                    105,
+                    56
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1035,
+                "y": 64
+            }
+        },
+        "next": [
+            "点skip4次_也可跳过4星卡"
+        ]
+    },
+    "点红点": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    225,
+                    160,
+                    60,
+                    480
+                ],
+                "template": [
+                    "template_1773128050457.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "anchor": "testRedPoint",
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 334,
+                "y": 37
+            }
+        },
+        "next": [
+            "点领取"
+        ]
+    },
+    "点领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "全部领取"
+                ],
+                "roi": [
+                    1072,
+                    121,
+                    198,
+                    73
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 577,
+                "y": 56
+            }
+        },
+        "next": [
+            "点ok"
+        ]
+    },
+    "然后点确定": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    605,
+                    530,
+                    70,
+                    25
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 836,
+                "y": 67
+            }
+        }
+    },
+    "确定获得新服装": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    582,
+                    519,
+                    124,
+                    51
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 697,
+                "y": 311
+            }
+        }
+    },
+    "识别到打歌完成的得分字样": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "得分"
+                ],
+                "roi": [
+                    145,
+                    102,
+                    57,
+                    37
+                ]
+            }
+        },
+        "rate_limit": 5000,
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": 209
+            }
+        },
+        "next": [
+            "[JumpBack]找俩按钮_先点下一步",
+            "打歌完成点右下确定",
+            "[JumpBack]获得报酬点中间ok"
+        ]
+    },
+    "识别到主页": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    728,
+                    26,
+                    45,
+                    27
+                ],
+                "expected": [
+                    "等级"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 326,
+                "y": 285
+            }
+        },
+        "next": [
+            "[JumpBack]判断体力是否大等于10",
+            "[JumpBack]点击礼包按钮",
+            "[JumpBack]点击任务按钮",
+            "进入每日抽卡"
+        ]
+    },
+    "自动已开且识别不到最大消费": {
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 328,
+                "y": 596
+            }
+        },
+        "next": [
+            "开始演出"
+        ]
+    },
+    "获得报酬点中间ok": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "OK|0K"
+                ],
+                "roi": [
+                    595,
+                    579,
+                    88,
+                    48
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    580,
+                    579,
+                    124,
+                    47
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 591,
+                "y": 447
+            }
+        }
+    },
+    "菜单无红点_所有任务结束": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1233,
+                    0,
+                    45,
+                    45
+                ],
+                "template": [
+                    "template_1773299606496.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 264,
+                "y": 914
+            }
+        }
+    },
+    "菜单有红点": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1239,
+                    7,
+                    34,
+                    34
+                ],
+                "template": [
+                    "template_1773142195024.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1204,
+                    34,
+                    43,
+                    40
+                ]
+            }
+        },
+        "anchor": "MenuRedPoint",
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 270,
+                "y": 28
+            }
+        },
+        "next": [
+            "星石商店有红点",
+            "星石商店无红点_所有任务结束"
+        ]
+    },
+    "识别免费按钮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "免费"
+                ],
+                "roi": [
+                    1200,
+                    655,
+                    49,
+                    36
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 512,
+                "y": 301
+            }
+        }
+    },
+    "识别十倍体力选中": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        150,
+                        150
+                    ]
+                ],
+                "roi": [
+                    991,
+                    507,
+                    21,
+                    19
+                ],
+                "upper": [
+                    [
+                        255,
+                        255,
+                        255
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    988,
+                    505,
+                    29,
+                    22
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 933,
+                "y": 43
+            }
+        },
+        "next": [
+            "选中十倍体力后点ok"
+        ]
+    },
+    "识别按钮为亮": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        180,
+                        180,
+                        180
+                    ]
+                ],
+                "roi": [
+                    1163,
+                    664,
+                    41,
+                    16
+                ],
+                "upper": [
+                    [
+                        255,
+                        255,
+                        255
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 728,
+                "y": 302
+            }
+        }
+    },
+    "识别自由演出": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "自由演出"
+                ],
+                "roi": [
+                    683,
+                    189,
+                    241,
+                    347
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 238,
+                "y": 248
+            }
+        },
+        "next": [
+            "点击expert难度"
+        ]
+    },
+    "识别非今日已完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "今日已完成"
+                ],
+                "roi": [
+                    1153,
+                    646,
+                    77,
+                    19
+                ]
+            }
+        },
+        "inverse": true,
+        "$__mpe_code": {
+            "position": {
+                "x": 726,
+                "y": 512
+            }
+        }
+    },
+    "识别黄P": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    685,
+                    189,
+                    246,
+                    343
+                ],
+                "template": [
+                    "template_1773081460966.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 235,
+                "y": 66
+            }
+        }
+    },
+    "识别黄P和自由演出": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    ""
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 10,
+                "y": 38
+            }
+        }
+    },
+    "超值组合有红点": {
+        "recognition": {
+            "type": "And",
+            "param": {
+                "all_of": [
+                    "找到超值组合",
+                    "找超值组合右上红点"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    106,
+                    297,
+                    101,
+                    32
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1004,
+                "y": 45
+            }
+        },
+        "next": [
+            "点免费星石按钮"
+        ]
+    },
+    "进入每日抽卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "招募"
+                ],
+                "roi": [
+                    670,
+                    671,
+                    62,
+                    31
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    670,
+                    635,
+                    65,
+                    60
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 35,
+                "y": 97
+            }
+        },
+        "next": [
+            "下拉3次"
+        ]
+    },
+    "退出抽卡界面": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    30,
+                    30,
+                    45,
+                    45
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 2000,
+                "y": 422
+            }
+        },
+        "next": [
+            "每周星石流程开始"
+        ]
+    },
+    "选中十倍体力后点ok": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "OK"
+                ],
+                "roi": [
+                    525,
+                    605,
+                    228,
+                    68
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 1180,
+                "y": 266
+            }
+        },
+        "next": [
+            "开始演出"
+        ]
+    },
+    "领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "键领取"
+                ],
+                "roi": [
+                    1034,
+                    122,
+                    102,
+                    32
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 221,
+                "y": 311
+            }
+        },
+        "next": [
+            "领完点确定"
+        ]
+    },
+    "领完点确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    587,
+                    582,
+                    108,
+                    44
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    607,
+                    586,
+                    63,
+                    36
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 447,
+                "y": 299
+            }
+        },
+        "next": [
+            "确定获得新服装",
+            "没有可领取的礼物"
+        ]
+    },
+    "每周星石流程开始": {
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 292
+            }
+        },
+        "next": [
+            "菜单有红点",
+            "菜单无红点_所有任务结束"
+        ]
+    },
+    "关闭菜单界面": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    604,
+                    554,
+                    73,
+                    33
+                ]
+            }
+        },
+        "pre_wait_freezes": 300,
+        "post_wait_freezes": 300,
+        "$__mpe_code": {
+            "position": {
+                "x": 2313,
+                "y": 283
+            }
+        }
+    },
+    "商店无红点": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        240,
+                        240,
+                        240
+                    ]
+                ],
+                "roi": [
+                    615,
+                    170,
+                    20,
+                    20
+                ],
+                "upper": [
+                    [
+                        245,
+                        245,
+                        245
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 712,
+                "y": 473
+            }
+        }
+    },
+    "等待登录中": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "登录游戏获得奖励"
+                ],
+                "roi": [
+                    366,
+                    18,
+                    522,
+                    82
+                ]
+            }
+        },
+        "pre_delay": 15000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4,
+                "y": 42
+            }
+        },
+        "next": [
+            "[JumpBack]每日首登点击下一步",
+            "识别到主页"
+        ]
+    },
+    "右下识别确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    1013,
+                    627,
+                    115,
+                    45
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 717,
+                "y": 918
+            }
+        }
+    },
+    "右下按钮亮了": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        55,
+                        110
+                    ]
+                ],
+                "upper": [
+                    [
+                        255,
+                        65,
+                        120
+                    ]
+                ],
+                "roi": [
+                    989,
+                    633,
+                    36,
+                    28
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 502,
+                "y": 918
+            }
+        }
+    }
+}

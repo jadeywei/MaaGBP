@@ -4,12 +4,12 @@
             "filePath": "C:\\repositories\\MaaGBP\\assets\\resource\\pipeline\\my_task.json",
             "filename": "MaaGBP",
             "isModifiedExternally": false,
-            "lastSyncTime": 1773468770855,
+            "lastSyncTime": 1773560074567,
             "prefix": "",
             "savedViewport": {
-                "x": 627,
-                "y": 33,
-                "zoom": 0.5
+                "x": -385,
+                "y": -82,
+                "zoom": 1
             },
             "version": "v1.2.3"
         }
@@ -24,8 +24,8 @@
             "color": "blue",
             "height": 357,
             "position": {
-                "x": 4291,
-                "y": 417
+                "x": 5204,
+                "y": 487
             },
             "width": 695
         }
@@ -104,23 +104,39 @@
     "$__mpe_group_结束后点击确定和下一步_MaaGBP": {
         "$__mpe_code": {
             "childrenLabels": [
-                "右下识别确定",
-                "右下按钮亮了",
                 "打完歌找下一步",
                 "打完歌找中间的确定",
                 "打歌完成点右下确定",
                 "找俩按钮_先点下一步",
                 "然后点确定",
-                "等待打歌完成",
-                "获得报酬点中间ok"
+                "识别到打歌完成的得分字样",
+                "获得报酬点中间ok",
+                "右下识别确定",
+                "右下按钮亮了",
+                "等待打歌完成"
             ],
             "color": "blue",
             "height": 1159,
             "position": {
-                "x": 3397,
-                "y": -249
+                "x": 4073,
+                "y": -305
             },
-            "width": 828
+            "width": 1092
+        }
+    },
+    "$__mpe_group_进入打歌清体力流程_MaaGBP": {
+        "$__mpe_code": {
+            "childrenLabels": [
+                "判断体力是否大等于10",
+                "点击演出"
+            ],
+            "color": "blue",
+            "height": 300,
+            "position": {
+                "x": 771,
+                "y": 436
+            },
+            "width": 466
         }
     },
     "$__mpe_group_选曲完毕-开始打歌_MaaGBP": {
@@ -128,7 +144,7 @@
             "childrenLabels": [
                 "开始演出",
                 "打开十倍体力页面",
-                "打开自动演出01",
+                "打开自动演出",
                 "最大消费还有x次",
                 "点击确定",
                 "自动已开且识别不到最大消费",
@@ -138,7 +154,7 @@
             "color": "blue",
             "height": 806,
             "position": {
-                "x": 1714,
+                "x": 2393,
                 "y": -47
             },
             "width": 1614
@@ -187,15 +203,17 @@
             "childrenLabels": [
                 "识别自由演出",
                 "识别黄P",
-                "识别黄P和自由演出"
+                "识别黄P和自由演出",
+                "点击expert难度",
+                "点击随机选曲按钮"
             ],
             "color": "blue",
             "height": 492,
             "position": {
-                "x": 1216,
+                "x": 1311,
                 "y": 247
             },
-            "width": 450
+            "width": 1022
         }
     },
     "3次抽完点下面确定": {
@@ -465,8 +483,8 @@
     "判断体力是否大等于10": {
         "$__mpe_code": {
             "position": {
-                "x": 775,
-                "y": 521
+                "x": 9,
+                "y": 78
             }
         },
         "next": [
@@ -526,7 +544,7 @@
     "右下按钮亮了": {
         "$__mpe_code": {
             "position": {
-                "x": 238,
+                "x": 502,
                 "y": 918
             }
         },
@@ -559,7 +577,7 @@
     "右下识别确定": {
         "$__mpe_code": {
             "position": {
-                "x": 453,
+                "x": 717,
                 "y": 918
             }
         },
@@ -678,7 +696,7 @@
     "打完歌找下一步": {
         "$__mpe_code": {
             "position": {
-                "x": 239,
+                "x": 503,
                 "y": 267
             }
         },
@@ -700,7 +718,7 @@
     "打完歌找中间的确定": {
         "$__mpe_code": {
             "position": {
-                "x": 455,
+                "x": 719,
                 "y": 266
             }
         },
@@ -770,7 +788,7 @@
         "post_wait_freezes": 15000,
         "pre_wait_freezes": 300
     },
-    "打开自动演出01": {
+    "打开自动演出": {
         "$__mpe_code": {
             "position": {
                 "x": 329,
@@ -801,7 +819,7 @@
     "打歌完成点右下确定": {
         "$__mpe_code": {
             "position": {
-                "x": 326,
+                "x": 590,
                 "y": 717
             }
         },
@@ -827,7 +845,7 @@
     "找俩按钮_先点下一步": {
         "$__mpe_code": {
             "position": {
-                "x": 331,
+                "x": 595,
                 "y": 37
             }
         },
@@ -1333,6 +1351,56 @@
         "repeat": 5,
         "repeat_delay": 500
     },
+    "点击expert难度": {
+        "$__mpe_code": {
+            "position": {
+                "x": 552,
+                "y": 160
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    1035,
+                    527,
+                    32,
+                    27
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "点击随机选曲按钮"
+        ],
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "recognition": {
+            "param": {
+                "lower": [
+                    [
+                        250,
+                        55,
+                        110
+                    ]
+                ],
+                "roi": [
+                    986,
+                    633,
+                    41,
+                    24
+                ],
+                "upper": [
+                    [
+                        255,
+                        65,
+                        120
+                    ]
+                ]
+            },
+            "type": "ColorMatch"
+        },
+        "repeat": 3
+    },
     "点击任务按钮": {
         "$__mpe_code": {
             "position": {
@@ -1415,8 +1483,8 @@
     "点击演出": {
         "$__mpe_code": {
             "position": {
-                "x": 997,
-                "y": 511
+                "x": 250,
+                "y": 68
             }
         },
         "action": {
@@ -1455,7 +1523,7 @@
             "type": "Click"
         },
         "next": [
-            "[JumpBack]打开自动演出01",
+            "[JumpBack]打开自动演出",
             "最大消费还有x次",
             "自动已开且识别不到最大消费"
         ],
@@ -1584,6 +1652,31 @@
             "type": "OCR"
         }
     },
+    "点击随机选曲按钮": {
+        "$__mpe_code": {
+            "position": {
+                "x": 789,
+                "y": 251
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    660,
+                    617,
+                    52,
+                    48
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "点击确定"
+        ],
+        "post_wait_freezes": 300,
+        "pre_wait_freezes": 300,
+        "repeat": 2
+    },
     "点屏幕中间跳过": {
         "$__mpe_code": {
             "position": {
@@ -1710,7 +1803,7 @@
     "然后点确定": {
         "$__mpe_code": {
             "position": {
-                "x": 572,
+                "x": 836,
                 "y": 67
             }
         },
@@ -1757,16 +1850,15 @@
     "等待打歌完成": {
         "$__mpe_code": {
             "position": {
-                "x": 14,
-                "y": 62
+                "x": 20,
+                "y": 216
             }
         },
         "next": [
-            "[JumpBack]找俩按钮_先点下一步",
-            "打歌完成点右下确定",
-            "[JumpBack]获得报酬点中间ok"
+            "识别到打歌完成的得分字样"
         ],
-        "pre_delay": 120000
+        "pre_delay": 90000,
+        "timeout": -1
     },
     "等待登录中": {
         "$__mpe_code": {
@@ -1811,7 +1903,7 @@
     "获得报酬点中间ok": {
         "$__mpe_code": {
             "position": {
-                "x": 327,
+                "x": 591,
                 "y": 447
             }
         },
@@ -1957,6 +2049,34 @@
             "type": "OCR"
         }
     },
+    "识别到打歌完成的得分字样": {
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": 209
+            }
+        },
+        "next": [
+            "[JumpBack]找俩按钮_先点下一步",
+            "打歌完成点右下确定",
+            "[JumpBack]获得报酬点中间ok"
+        ],
+        "rate_limit": 5000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "得分"
+                ],
+                "roi": [
+                    145,
+                    102,
+                    57,
+                    37
+                ]
+            },
+            "type": "OCR"
+        }
+    },
     "识别十倍体力选中": {
         "$__mpe_code": {
             "position": {
@@ -2051,7 +2171,7 @@
             "type": "Click"
         },
         "next": [
-            "点击确定"
+            "点击expert难度"
         ],
         "post_wait_freezes": 300,
         "pre_wait_freezes": 300,
